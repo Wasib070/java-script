@@ -12,6 +12,6 @@ myar.includes(200);
 myar.indexOf(200);
 
 const varr=myar.join()
-console.log(myar);
+console.log(varr);
 
 
