@@ -18,6 +18,21 @@ const all_heros=M_h.concat(dc_heros)
 console.log("cancatenation",all_heros);
 
 
+const a=[1,2,3,4,5];
+const b=[10,20,30,40];
+const c=[100,200,300,400];
+const d=[0,0,0,0,0];
+const all =[...a,...b,...c,...c];
+console.log(all);
+let score1=100;
+let score2=200;
+let score3=300;
+console.log(Array.of(score1,score2,score3));
+
+
+
+
+
 
 
 
