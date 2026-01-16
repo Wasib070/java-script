@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color change</title>
+    <style>
+        
+        
+        #grey{
+            color: grey;
+            border:50px solid grey;
+            height: 100px;
+            width: 100px;
+        }
+         #blue{
+            color: grey;
+            border:50px solid blue;
+            margin: 5px;
+            margin-top:5px;
+        }
+         #green{
+            color: grey;
+            border:50px solid green
+        }
+         #purple{
+            color: grey;
+            border:50px solid purple;
+            margin: 5px;
+        }
+        div{
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+ <div >
+       <h1>Click to change background color</h1>
+    <br>
+    <br>
+    
+    <span class="button" id="grey"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="green"></span>
+    <span class="button" id="purple"></span>
+ </div>
+    <script> 
+        const body=document.querySelectorAll('.button');
+const b=document.querySelector('body')
+body.forEach(function (v){
+    v.addEventListener('click',function(e){
+        if(e.target.id==='grey'){
+            b.style.backgroundColor=e.target.id
+        }
+        if(e.target.id==='blue'){
+            b.style.backgroundColor='gray' //both methods are used
+        }
+        if(e.target.id==='purple'){
+            b.style.backgroundColor=e.target.id
+        }
+        if(e.target.id==='green'){
+            b.style.backgroundColor=e.target.id
+        }
+        
+    })
+})
+ </script>
+</body>
+</html>
